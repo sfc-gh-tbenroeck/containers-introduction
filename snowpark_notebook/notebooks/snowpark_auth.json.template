@@ -1,0 +1,9 @@
+{
+        "account": "wp00000.west-us-2.azure",
+        "username": "myusername",
+        "password": "__PASSWORD__",
+        "role": "ACCOUNTADMIN",
+        "warehouse": "XSMALL",
+        "database": "mydb",
+        "schema": "PUBLIC"
+ }
