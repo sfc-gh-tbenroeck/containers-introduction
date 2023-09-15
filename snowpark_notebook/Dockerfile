@@ -16,11 +16,13 @@ SHELL ["conda", "run", "-n", "snowpark_env", "/bin/bash", "-c"]
 RUN conda install -c https://repo.anaconda.com/pkgs/snowflake numpy pandas scikit-learn joblib cachetools pyarrow=8.0.0 snowflake-snowpark-python ipykernel -y && \
     pip install --no-cache-dir matplotlib plotly notebook
 
+# Set the PATH environment variable to include the bin directory
+ENV PATH="/opt/conda/envs/snowpark_env/bin:${PATH}"
 
 # Create a folder named 'examples'
 RUN mkdir -p /example
 
-# Copy files into the 'examples' folder
+# Copy files into the 'example' folder
 COPY  notebooks/default.ipynb /example/default.ipynb
 COPY notebooks/snowpark_auth.json.template /example/snowpark_auth.json
 

@@ -1,15 +1,9 @@
-# Flask & PostgreSQL Dockerized Application
+# Introduction to Docker Compose
+Docker Compose is a powerful tool that helps developers define and manage multi-container Docker applications. It provides an efficient way to specify the configuration of your application's services, networks, and volumes in a single YAML file, allowing you to orchestrate complex applications with ease. Let's delve into some of the core features of Docker Compose that make it an indispensable tool for modern software development
+
+## Flask & PostgreSQL Dockerized Application
 
 This project is a simple Flask application that interfaces with a PostgreSQL database, both running in separate Docker containers managed by Docker Compose.
-
-## Prerequisites
-
-- [Docker](https://www.docker.com/get-started) installed and running.
-- [Docker Compose](https://docs.docker.com/compose/install/) installed.
-
-## Getting Started
-
-Follow these steps to get the application up and running:
 
 ### Step 1: Clone the Repository
 
@@ -25,7 +19,7 @@ webapp_database/
 
 ### Step 2: Build and Run the Docker Containers
 
-Open a terminal and navigate to the project directory (`flask_postgres_app`). Run the following command to build and start the Docker containers:
+Open a terminal and navigate to the project directory (`webapp_database`). Run the following command to build and start the Docker containers:
 
 ```bash
 docker-compose up --build
