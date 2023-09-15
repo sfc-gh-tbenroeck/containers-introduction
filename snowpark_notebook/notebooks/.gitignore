@@ -1,5 +1,2 @@
 snowpark_auth.json
 .ipynb_checkpoints/
-*.log_bootstrap
-!.gitignore
-.DS_Store
