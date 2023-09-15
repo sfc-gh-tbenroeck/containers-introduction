@@ -1,3 +1,21 @@
+# Containers Introduction
+
+This repository serves as a quick introduction to containers, providing general information and detailed examples to get you started with Docker and containerization concepts.
+
+## Repository Structure and Intended Flow
+
+1. **snowsql/**: Start your journey with understanding how to containerize CLI tools. In this section, you will learn how to build a container utilizing the SnowSQL CLI tool as an example. Containers are excellent tools for packaging and distributing CLI tooling.
+
+2. **webapp/**: Progress to creating applications and understanding port mapping between your container and the local system. This folder guides you through the process of creating an application and mapping ports from the container to your local system.
+
+3. **webapp_database/**: Dive into the world of Docker Compose to launch a multi-container application. This example also showcases the use of `docker exec` to bootstrap a PostgreSQL database.
+
+4. **snowpark/**: This section demonstrates how to create a container equipped with Anaconda and frequently used Snowflake packages. It launches a Jupyter notebook server with a sample notebook that establishes a connection to Snowflake.
+
+5. **devcontainer_examples/**: This folder helps you understand the concept of devcontainers and their utility. It provides two examples; a Go web server using the Microsoft Go devcontainer as the source image, and a Snowpark example that utilizes the image created from the snowpark/ folder.
+
+---
+
 # Introduction to Containers
 
 Welcome to the introduction guide to containers. This guide aims to provide new engineers with an understanding of what containers are, their history, why they are important, and how they differ from virtualization. Additionally, we will delve into core concepts related to container technology.
